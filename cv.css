@@ -177,7 +177,7 @@ h1{
 
 .progress-container{
     width: 100%;
-    height: 300px;
+    height: 350px;
 }
 
 .circle-container{
@@ -190,21 +190,32 @@ h1{
     justify-content: space-around;
 }
 
-svg{
+svg.circle{
     width: 200px;
     height: 200px;
 }
 
 .progress-container{
     background-color: #7796CB;
+    display: flex;
+    flex-direction: column;
 }
 
 .cir{
+    stroke: #A3BCF9;
+    stroke-width: 20;
+    fill: transparent;
     stroke-dasharray: 439.8839416503906;
     stroke-dashoffset: 439.8839416503906;
     stroke-linecap: round;
     transform-origin: 100px 100px;
     transform: rotate(-90deg);
+}
+
+.outer-circle, .inner-circle{
+    stroke: #677DAE;
+    stroke-width: 5;
+    fill: transparent;
 }
 
 .circle1{
@@ -226,15 +237,6 @@ svg{
     animation: draw3 3s ease;
     animation-fill-mode: forwards;
     animation-delay: 0.2s;
-}
-
-.outer-circle{
-    stroke-dasharray: 439.8839416503906;
-    stroke-dashoffset: 439.8839416503906;
-    stroke: #000000;
-    stroke-linecap: round;
-    transform-origin: 100px 100px;
-    transform: rotate(-90deg);
 }
 
 @keyframes draw1{
@@ -276,6 +278,77 @@ svg{
     color: black;
     font-style: normal;
 }
+
+.skillset-container {
+    flex-grow: 1;
+
+}
+
+.skillset-text{
+    flex-grow: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.skillset{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.svg-wrapper {
+    /* position: absolute;
+    top: 50%;
+    transform: translate(-50%, 50%);
+    width: 320px; */
+  }
+  
+  .text3 {
+    color: #fff;
+    font-family: "Varela Round", sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    line-height: 32px;
+    position: relative;
+    text-align: center;
+    transform: translateY(-50px);
+  }
+    
+  .shape {
+    fill: transparent;
+    stroke-width: 8px;
+    stroke: #A3BCF9;
+  }
+
+  .shape1{
+    stroke-dasharray: 165 760;
+    stroke-dashoffset: -459;
+  }
+
+  .shape2{
+    stroke-dasharray: 144 760;
+    stroke-dashoffset: -468;
+  }
+
+  .shape3{
+    stroke-dasharray: 240 760;
+    stroke-dashoffset: -420;
+  }
+
+  @keyframes draw {
+    100% {
+      stroke-dasharray: 760;
+      stroke-dashoffset: 0;
+      stroke-width: 4px;
+    }
+  }
+  
+  .svg-wrapper:hover .shape {
+    -webkit-animation: 0.5s draw linear forwards;
+    animation: 0.5s draw linear forwards;
+  }
 /* .circle-container{
     position: relative;
     width: 200px;
