@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cv.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -78,17 +81,51 @@
 
         <h1>Skills</h1>
 
-        <div class="circle-container">
-            <div class="percent">
-                <svg>
-                    <circle cx="70" cy="70" r="70"></circle>
-                    <circle cx="70" cy="70" r="70"></circle>
-                </svg>
-                <div class="number">
-                    <h2>87<span>%</span></h2>
+        <div class="progress-container">
+            <div class="circle-container">
+                <div class="circle">
+                    <svg>
+                        <circle class="cir java" cx="100" cy="100" r="70" stroke="#A3BCF9" stroke-width="20" fill="transparent"/>
+                        <circle class="outer-circle1" cx="100" cy="100" r="82" stroke="#677DAE" stroke-width="5" fill="transparent"/>
+                        <circle class="inner-circle1" cx="100" cy="100" r="57.5" stroke="#677DAE" stroke-width="5" fill="transparent"/>
+                        <foreignObject x="0" y="0" width="200" height="200">
+                            <div class="text-container">
+                              <div class="text">60%</div>
+                              <div class="text2">Java</div>
+                            </div>
+                        </foreignObject>
+                    </svg>
+                </div>
+                <div class="circle">
+                    <svg>
+                        <circle class="cir python" cx="100" cy="100" r="70" stroke="#A3BCF9" stroke-width="20" fill="transparent"/>
+                        <circle class="outer-circle1" cx="100" cy="100" r="82" stroke="#677DAE" stroke-width="5" fill="transparent"/>
+                        <circle class="inner-circle1" cx="100" cy="100" r="57.5" stroke="#677DAE" stroke-width="5" fill="transparent"/>
+                        <foreignObject x="0" y="0" width="200" height="200">
+                            <div class="text-container">
+                                <div class="text">70%</div>
+                                <div class="text2">Python</div>
+                            </div>
+                        </foreignObject>
+                    </svg>
+                </div>
+                <div class="circle">    
+                    <svg>
+                        <circle class="cir javascript" cx="100" cy="100" r="70" stroke="#A3BCF9" stroke-width="20" fill="transparent"/>
+                        <circle class="outer-circle1" cx="100" cy="100" r="82" stroke="#677DAE" stroke-width="5" fill="transparent"/>
+                        <circle class="inner-circle1" cx="100" cy="100" r="57.5" stroke="#677DAE" stroke-width="5" fill="transparent"/>
+                        <foreignObject x="0" y="0" width="200" height="200">
+                            <div class="text-container">
+                                <div class="text">30%</div>
+                                <div class="text2">JS</div>
+                            </div>
+                      </foreignObject>
+                    </svg>
                 </div>
             </div>
-            <h2 class="text">Progress</h2>
+            <div>
+                <div>Other skillset</div>
+            </div>
         </div>
 
         <div>

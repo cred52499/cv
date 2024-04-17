@@ -4,14 +4,14 @@
 }
 
 body{
-    background-color: #2F1D35;
+    background-color: #576490;
     
 }
 
 .content{
     margin-left: 20%;
     margin-right: 20%;
-    background-color: #576490;
+    background-color: #677DAE;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -175,10 +175,111 @@ h1{
     opacity: 1;
 }
 
+.progress-container{
+    width: 100%;
+    height: 300px;
+}
+
 .circle-container{
+    width: 100%;
+    height: 200px;
+}
+
+.circle-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+svg{
+    width: 200px;
+    height: 200px;
+}
+
+.progress-container{
+    background-color: #7796CB;
+}
+
+.cir{
+    stroke-dasharray: 439.8839416503906;
+    stroke-dashoffset: 439.8839416503906;
+    stroke-linecap: round;
+    transform-origin: 100px 100px;
+    transform: rotate(-90deg);
+}
+
+.circle1{
+    transition: stroke-dashoffset 1s ease;
+    animation: draw1 3s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+}
+
+.circle2{
+    transition: stroke-dashoffset 1s ease;
+    animation: draw2 3s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+}
+
+.circle3{
+    transition: stroke-dashoffset 1s ease;
+    animation: draw3 3s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+}
+
+.outer-circle{
+    stroke-dasharray: 439.8839416503906;
+    stroke-dashoffset: 439.8839416503906;
+    stroke: #000000;
+    stroke-linecap: round;
+    transform-origin: 100px 100px;
+    transform: rotate(-90deg);
+}
+
+@keyframes draw1{
+    to {
+        stroke-dashoffset: 175.95357666; /*60%*/
+    }
+}
+
+@keyframes draw2{
+    to {
+        stroke-dashoffset: 131.965182495; /*70%*/
+    }
+}
+
+@keyframes draw3{
+    to {
+        stroke-dashoffset: 307.918759155; /*30%*/
+    }
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text{
+    font-size: 30px;
+    font-family: "Varela Round", sans-serif;
+    color: black;
+    font-style: normal;
+}
+
+.text2{
+    font-size: 25px;
+    font-family: "Varela Round", sans-serif;
+    color: black;
+    font-style: normal;
+}
+/* .circle-container{
     position: relative;
-    width: 300px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -255,7 +356,7 @@ h1{
 
 .content2{
     margin: 25px 50px;
-}
+} */
 
 /* .container{
     padding: 20px;
