@@ -1,6 +1,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    font-family: "Montserrat", sans-serif;
 }
 
 body{
@@ -20,7 +21,7 @@ body{
     position: fixed;
     height: 60px;
     width: 60%;
-    z-index: 1;;
+    z-index: 2;
 }
 
 .nav-bar {
@@ -34,12 +35,23 @@ body{
     box-shadow: 0 30px 60px rgba(0,0,0,.2);
 }
 
-.topnavitem{
-    font-size: 40px;
+.nav-bar a{
+    transition: all 0.3s ease 0s;
+    color: white;
 }
 
-.firstcat{
-    padding-top: 100px;
+.nav-bar a.active,
+.nav-bar a:visited {
+  font-style: normal;
+  color: white;
+}
+
+.nav-bar a:hover {
+    color: #677DAE;
+}
+
+.topnavitem{
+    font-size: 40px;
 }
 
 .profile{
@@ -75,12 +87,9 @@ img.icon{
 h1{
     text-align: center;
     color: #A3BCF9;
-    padding: 15px;
     font-size: 35px;
-}
-
-.timeline{
-    margin-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 30px;
 }
 
 .checkpoint{
@@ -117,10 +126,9 @@ h1{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #000; /* Change the color of the text as per your requirement */
+    color: #000;
     text-align: center;
-    text-decoration: none; /* Remove underline from the text */
-    padding: 0px 0px; /* Adjust padding as needed */
+    padding: 0px 0px;
     transition: color 0.5s ease;
     font-size: 25px;
   }
@@ -199,7 +207,6 @@ svg.circle{
     background-color: #7796CB;
     display: flex;
     flex-direction: column;
-    margin-bottom: 70px;
 }
 
 .cir{
@@ -350,7 +357,6 @@ svg.circle{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    margin-bottom: 70px;
 }
 
 img.project-image {
@@ -448,7 +454,7 @@ a.project-showcase:is(:hover, :focus) img {
     background-color: #7796CB ;
 }
 
-.certificate{
+#image-track > .image{
     width: 350px;
     height: 500px;
     object-fit: cover;
@@ -475,141 +481,3 @@ a.project-showcase:is(:hover, :focus) img {
     color: white;
     text-align: center;
 }
-
-/* .circle-container{
-    position: relative;
-    width: 200px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #7796CB;
-    box-shadow: 0 30px 60px rgba(0,0,0,.2);
-}
-
-.circle-container .percent{
-    position: relative;
-    width: 150px;
-    height: 150px;
-}
-
-.circle-container .percent svg{
-    position: relative;
-    width: 150px;
-    height: 150px;
-}
-
-.circle-container .percent svg circle{
-    width: 150px;
-    height: 150px;
-    fill: none;
-    stroke-width: 10;
-    stroke:#000;
-    transform: translate(5px,5px);
-    stroke-dasharray: 440;
-    stroke-dashoffset: 440;
-    stroke-linecap: round;
-}
-
-.circle-container .percent svg circle:nth-child(1){
-    stroke-dashoffset: 0;
-    stroke: #f3f3f3;
-}
-
-.circle-container .percent svg circle:nth-child(2){
-    stroke-dashoffset: calc(440 - (440 * 87) / 100);
-    stroke: #576490;
-    ;
-}
-
-.circle-container .percent .number{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #D1D2F9;
-}
-
-.circle-container .percent .number h2{
-    font-size: 48px;
-
-}
-
-.circle-container .percent .number h2 span{
-    font-size: 24px;
-    
-}
-
-.circle-container .text{
-    padding: 10px 0 0;
-    color: #D1D2F9;
-    font-weight: 700;
-    letter-spacing: 1px;
-
-}
-
-
-.content2{
-    margin: 25px 50px;
-} */
-
-/* .container{
-    padding: 20px;
-}
-
-.slider-wrapper{
-    position: relative;
-    max-width: 86%;
-    margin: 0 auto;
-}
-
-.slider{
-    display:flex;
-    aspect-ratio: 16/9;
-    overflow: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    border-radius: 15px;
-    scrollbar-width: none;
-}
-
-.slider img{
-    flex: 1 0 100%;
-    scroll-snap-align: start;
-    object-fit: cover;
-}
-
-.slider-nav{
-    display: flex;
-    column-gap: 100px;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
-.slider-nav a{
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.75;
-    transition: opacity ease 250ms;
-}
-
-.slider-nav a:hover{
-    opacity: 1;
-}
-
-.fixed {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    background: darkslategrey;
-} */

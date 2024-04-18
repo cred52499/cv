@@ -4,24 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cv.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <div class="content">
         <div class="nav-container">
             <div class="nav-bar">
-                <div class="topnavitem">Profile</div>
-                <div class="topnavitem">Education</div>
-                <div class="topnavitem">Skills</div>
-                <div class="topnavitem">Projects</div>
-                <div class="topnavitem">Certifications</div>
+                <div class="topnavitem"><a href="#profile">Profile</a></div>
+                <div class="topnavitem"><a href="#education">Education</a></div>
+                <div class="topnavitem"><a href="#skill">Skills</a></div>
+                <div class="topnavitem"><a href="#project">Projects</a></div>
+                <div class="topnavitem"><a href="#certification">Certifications</a></div>
             </div>
         </div>
 
-        <h1 class="firstcat">Profile</h1>
+        <h1 id="profile" class="firstcat">Profile</h1>
         
         <div class="profile">
             <div class="pp">
@@ -41,7 +40,7 @@
             </div>
         </div>
 
-        <h1>Education</h1>
+        <h1 id="education">Education</h1>
 
         <div class="timeline">
             <div class="checkpoint fade-in">
@@ -79,7 +78,7 @@
             </div>
         </div>
 
-        <h1>Skills</h1>
+        <h1 id="skill">Skills</h1>
 
         <div class="progress-container">
             <div class="circle-container">
@@ -148,7 +147,7 @@
             </div>
         </div>
 
-        <h1>Projects</h1>
+        <h1 id="project">Projects</h1>
         
         <div class="project-showcase-container">
             <ul>
@@ -171,22 +170,20 @@
             </ul>
         </div>
 
-        <h1>Certifications</h1>
+        <h1 id="certification">Certifications</h1>
         <div class="certificate-container">
             <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-                <img class="certificate" src="photo/c1.png" draggable="false"/>
-                <img class="certificate" src="photo/c2.png" draggable="false"/>
-                <img class="certificate" src="photo/c3.png" draggable="false"/>
-                <img class="certificate" src="photo/c4.png" draggable="false"/>
-                <img class="certificate" src="photo/c5.png" draggable="false"/>
+                <img class="image" src="photo/c1.png" draggable="false"/>
+                <img class="image" src="photo/c2.png" draggable="false"/>
+                <img class="image" src="photo/c3.png" draggable="false"/>
+                <img class="image" src="photo/c4.png" draggable="false"/>
+                <img class="image" src="photo/c5.png" draggable="false"/>
             </div>
         </div>
         <div class="footer">
             <p>Copyright @ Darren / 2024</p>
           </div>
     </div>
-
-    <script src="cv.js">
-    </script>
 </body>
+<script src="cv.js"></script>
 </html>
