@@ -64,17 +64,22 @@ body{
 }
 
 .slogan-container{
-    border:#000;
+    border:#576490;
     border-style: solid;
     border-radius: 20px;
+    border-width: 10px;
     margin: 10px;
+    background-color: #576490;
+    transform: translateX(-12px);
 }
 
 .slogan{
-    width: 250px;
+    width: 251px;
     font-family: "Varela Round", sans-serif;
     font-size: 24.5px;
     text-align: center;
+    
+    color: white;
 }
 
 img.ppcontent{
@@ -85,7 +90,7 @@ img.ppcontent{
 
 .pd{
     margin: 2%;
-    color: #D9D9D9;
+    color: white;
     font-size: 29px;
 }
 
