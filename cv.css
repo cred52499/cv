@@ -63,6 +63,16 @@ body{
     margin: 0% 10%;
 }
 
+.slogan-container{
+    border:#000;
+}
+
+.slogan{
+    width: 250px;
+    font-family: "Varela Round", sans-serif;
+    font-size: 24.5px;
+}
+
 img.ppcontent{
     width: 250px;
     height: auto;
