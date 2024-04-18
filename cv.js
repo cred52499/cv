@@ -60,8 +60,13 @@ observer3.observe(document.querySelector('.javascript'));
 const track = document.getElementById("image-track");
 
 window.onmousedown = e => {
-    track.dataset.mouseDownAt = e.clientX;
-    track.dataset.mouseDownAtY = e.clientY;
+    track.dataset.mouseDownAtPageY = e.pageY;
+    if(track.dataset.mouseDownAtPageY > 3150 && track.dataset.mouseDownAtPageY < 3700){
+        track.dataset.mouseDownAt = e.clientX;
+    }
+    else{
+        track.dataset.mouseDownAt = 0;
+    }
 
 }
 
@@ -86,3 +91,10 @@ window.onmousemove = e => {
     track.style.transform = `translate(${nextPercentage}%, 0)`;
 }
 
+// let screenLog = document.querySelector("#screen-log");
+// document.addEventListener("mousemove", logKey);
+
+// function logKey(e) {
+//   screenLog.innerText = `
+//     Screen X/Y: ${e.pageX}, ${e.pageY}`;
+// }
