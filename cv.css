@@ -13,7 +13,7 @@ body{
     margin-left: 20%;
     margin-right: 20%;
     background-color: #677DAE;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
 }
 
